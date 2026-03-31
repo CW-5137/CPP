@@ -24,6 +24,7 @@ typedef struct {
     char moves[MAX_MOVES];
     time_t startTime;
     int elapsedBeforeSave;
+    
 } SaveData;
 
 void copyBoard(int dest[MAX][MAX], int src[MAX][MAX], int size);
