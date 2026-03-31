@@ -22,4 +22,5 @@ int main()
     printf("%d\n", reverse(x));   // 출력
 
     return 0;
+    
 }
