@@ -1,0 +1,13 @@
+MyTime
+-------------------------
+- hour : int
+- minute : int
+- second : int
+- millisecond : int
+-------------------------
++ MyTime()
++ convert(double) : void
++ print() : void
++ add(MyTime) : MyTime
++ reset() : void
++ read() : void
