@@ -1,3 +1,5 @@
+//종합 비교된 5가지 함수를 구현하고 검증
+
 #include <iostream>
 using namespace std;
 
