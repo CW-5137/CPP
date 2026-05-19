@@ -22,10 +22,10 @@ protected:
 public:
 	Monster(string n = "³ª±«¹°", string i = "¡Ø", int px = 0, int py = 0)
 		: name(n), icon(i), x(px), y(py), nItem(0) {}
-	virtual ~Monster() { cout << "\t" << name << icon << " ¹°·¯°©´Ï´Ù~~~\n"; }
+	~Monster() { cout << "\t" << name << icon << " ¹°·¯°©´Ï´Ù~~~\n"; }
 
 	void draw(Canvas &canvas) { canvas.draw(x, y, icon); }
-	virtual void move(int** map, int maxx, int maxy) {
+	void move(int** map, int maxx, int maxy) {
 		switch (rand() % 8) {
 		case 0: y--; break;
 		case 1: x++; y--; break;

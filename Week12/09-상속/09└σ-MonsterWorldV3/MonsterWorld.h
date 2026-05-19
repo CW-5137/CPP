@@ -1,7 +1,6 @@
 #pragma once
 #include "Canvas.h"
 #include "VariousMonsters.h"
-#include "Human.h"
 #include "Matrix.h"
 #include <windows.h>
 #define MAXMONS 8
@@ -28,7 +27,7 @@ class MonsterWorld {
 				if (Map(x, y) > 0) canvas.draw(x, y, "■");
 		for (int i = 0; i < nMon; i++)
 			pMon[i]->draw(canvas);
-		canvas.print("[ Monster World (신인류의 탄생) ]");
+		canvas.print("[ Monster World (세상의 모든 귀신) ]");
 
 		cerr << " 전체 이동 횟수 = " << nMove << endl;
 		cerr << " 남은 아이템 수 = " << countItems() << endl;
@@ -55,8 +54,13 @@ public:
 		cerr << " 엔터를 누르세요...";
 		getchar();
 		for (int i = 0; i < maxwalk; i++) {
-			for (int k = 0; k < nMon; k++)
-				pMon[k]->move(world.Data(), xMax, yMax);
+			//for (int k = 0; k < nMon; k++)
+			//	pMon[k]->move(world.Data(), xMax, yMax);
+			((Zombie*)pMon[0])->move(world.Data(), xMax, yMax);
+			((Vampire*)pMon[1])->move(world.Data(), xMax, yMax);
+			((KGhost*)pMon[2])->move(world.Data(), xMax, yMax);
+			((Jiangshi*)pMon[3])->move(world.Data(), xMax, yMax);
+			((Jiangshi*)pMon[4])->move(world.Data(), xMax, yMax);
 
 			nMove++;
 			print();
