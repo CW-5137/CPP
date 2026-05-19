@@ -38,7 +38,7 @@ int main() {
 
 
 /*
-protected를 private로 바꾸면 Rectangle 클래스에서 x, y에 직접 접근할 수 없다.
+..protected를 private로 바꾸면 Rectangle 클래스에서 x, y에 직접 접근할 수 없다.
 
 Point 클래스의 x, y가 private가 되면 자식 클래스인 Rectangle도
 x, y를 사용할 수 없기 때문에 Rectangle의 draw() 함수에서
