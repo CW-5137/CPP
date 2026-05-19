@@ -11,13 +11,13 @@ void main()
 
 	do {
 		myCanvas.clear();
-		l.draw(myCanvas, "¡Ü");
-		r.draw(myCanvas, "¢Ã");
-		v.draw(myCanvas, "¡«");
+		l.draw(myCanvas, "ï¿½ï¿½");
+		r.draw(myCanvas, "ï¿½ï¿½");
+		v.draw(myCanvas, "ï¿½ï¿½");
 		h.draw(myCanvas, "--");
-		s.draw(myCanvas, "¡á");
+		s.draw(myCanvas, "ï¿½ï¿½");
 		c.draw(myCanvas);
-		myCanvas.print("³ªÀÇ »ç¶û½º·± ±×¸²ÆÇ");
+		myCanvas.print("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½");
 
 		l.move(rand() % 3 - 1, rand() % 3 - 1);
 		r.move(rand() % 3 - 1, rand() % 3 - 1);
@@ -25,3 +25,6 @@ void main()
 		c.move(rand() % 3 - 1, rand() % 3 - 1);
 	} while (getchar() != 'q');
 }
+
+
+//.
